@@ -26,6 +26,7 @@ function Projects() {
     }, [])
     
 
+
     return (
         <div className='container'>
             <ProjectCard
@@ -33,15 +34,9 @@ function Projects() {
                 Link={"https://get-it-done-gamefied.web.app/"}
                 GithubLink={"https://github.com/ccb1139/Get-it-Done-Gamified-to-do-list"}
                 imgs = {getItDoneArr}
+                Description={"Get-it-Done is a gamified to-do list. It allows you to add tasks and set due dates. As you complete tasks you unlock new features. You can also view your achievements and the top users."}
             >
-                Get it Done allows users to dynamically
-                set tasks that they must complete in the future. On a normal task manager, completing a task amounts to
-                simply checking it off as complete without any payoff. Get it Done rewards the user for persistence and
-                gives them an incentive to return. This solves the issue of apathy, as even if the user could live without
-                doing a task, leaving it incomplete has them lose out on the possibility of a reward. This results in more
-                consistent use by the user, more tasks added, and more tasks completed. This consistency in terms of
-                userbase is a feature that would make the application highly valuable to users and more marketable to
-                advertisers, resulting in a positive outcome for both user and developer.
+                
             </ProjectCard >
 
         </div>

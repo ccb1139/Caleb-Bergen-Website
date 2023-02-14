@@ -4,8 +4,9 @@ import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import { CarouselItem } from 'react-bootstrap';
+import '../css/project.css'
 
-function ProjectCard({ children, Name, Description, Image, Link, GithubLink, imgs }) {
+function ProjectCard({ Name, Description, Image, Link, GithubLink, imgs }) {
     function openNewLink(e) {
         const value = e.target.value;
         if (value === "progLink") {
@@ -15,41 +16,32 @@ function ProjectCard({ children, Name, Description, Image, Link, GithubLink, img
         }
 
     }
-
+    console.log(imgs);
     return (
         <Card>
             <Card.Body>
                 <Card.Title>{Name}</Card.Title>
-                <Card.Text className='container'>
+                <div className='row'>
                     <div className='col-6'>
                         <Carousel>
-                            {/* <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src="holder.js/800x400?text=First slide&bg=373940"
-                                    alt="First slide"
-                                />
-                                <Carousel.Caption>
-                                    <h3>First slide label</h3>
-                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                </Carousel.Caption>
-                            </Carousel.Item> */}
                             {imgs?.map((img, index) => {
-                                <Carousel.Item>
-                                    <img className="d-block w-100" src={img.img} alt={img.caption} />
-                                    <Carousel.Caption>
-                                        <h3>{img.caption}</h3>
-                                        <p>{img.desc}</p>
-                                    </Carousel.Caption>
+                                return(
+                                    <Carousel.Item>
+                                        <img className="d-block w-100 " src={img.img} alt={img.caption} />
+                                        <Carousel.Caption className='text-dark project-card-slideshow'>
+                                            <h3>{img.caption}</h3>
+                                            <p>{img.desc}</p>
+                                        </Carousel.Caption>
 
-                                </Carousel.Item>
+                                    </Carousel.Item>
+                                )  
                             })}
                         </Carousel>
                     </div>
                     <div className='col-6'>
-                        {children}
+                        {Description}
                     </div>
-                </Card.Text>
+                </div>
                 <Button variant="primary" value="progLink" onClick={openNewLink}>Go to Project</Button>
                 <Button variant="primary" value="gitLink" onClick={openNewLink}>Go to Github</Button>
             </Card.Body>
