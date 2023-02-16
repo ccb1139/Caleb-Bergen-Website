@@ -3,10 +3,12 @@ import { useState, useEffect } from "react";
 import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
+import Badge from 'react-bootstrap/Badge';
+
 import { CarouselItem } from 'react-bootstrap';
 import '../css/project.css'
 
-function ProjectCard({ Name, Description, Image, Link, GithubLink, imgs }) {
+function ProjectCard({ Name, Description, Image, Link, GithubLink, imgs, TechUsed }) {
     function openNewLink(e) {
         const value = e.target.value;
         if (value === "progLink") {
@@ -16,7 +18,7 @@ function ProjectCard({ Name, Description, Image, Link, GithubLink, imgs }) {
         }
 
     }
-    console.log(imgs);
+    // console.log(imgs);
     return (
         <Card>
             <Card.Body>
@@ -39,7 +41,20 @@ function ProjectCard({ Name, Description, Image, Link, GithubLink, imgs }) {
                         </Carousel>
                     </div>
                     <div className='col-6'>
-                        {Description}
+                        <div>
+                            <h4>Description:</h4>
+                            {Description}
+                        </div>
+                        <div>
+                            <h4>Technologies Used:</h4>
+                            {TechUsed?.map((tech, index) => {
+                                return (
+                                    <Badge pill bg="secondary" className='m-1'>{tech}</Badge>
+                                )
+                            })
+                            }
+                        </div>
+
                     </div>
                 </div>
                 <Button variant="primary" value="progLink" onClick={openNewLink}>Go to Project</Button>
