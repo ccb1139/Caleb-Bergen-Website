@@ -1,51 +1,59 @@
-import React from 'react'
-import ListGroup from 'react-bootstrap/ListGroup';
+import React from "react";
+import { useState, useEffect } from "react";
+import Carousel from "react-bootstrap/Carousel";
+import Card from "react-bootstrap/Card";
+import Badge from "react-bootstrap/Badge";
+import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 function Skills() {
+  const [skills, setSkills] = useState([]);
+
+  useEffect(() => {
+    setSkills([...languages, ...frameworks, ...databases, ...tools]);
+  }, []);
+  const languages = [ "HTML5", "CSS", "JavaScript", "Python", "C++", "Java", "Haskell", "TypeScript"];
+  const frameworks = ["React", "Bootstrap", "Tailwind CSS", "Node.js", "JQuery", "Bootstrap"];
+  const databases = ["MongoDB", "MySQL", "PostgreSQL", "SQLite"];
+  const tools = ["Git", "GitHub", "VS Code", "Visual Studio", "Jupyter Notebook", "Heroku", "Firebase", "Linux", "Windows", "MacOS"];
+
+  
+
   return (
-    <div className='container'>
-        <div className='row'>
-            <h1>Skills</h1>
-        </div>
-        <div className='row'>
-            <div className='col-4'>
-                <h3>Front-End</h3>
-                <ListGroup variant="flush">
-                    <ListGroup.Item>HTML</ListGroup.Item>
-                    <ListGroup.Item>CSS</ListGroup.Item>
-                    <ListGroup.Item>JavaScript</ListGroup.Item>
-                    <ListGroup.Item>React</ListGroup.Item>
-                    <ListGroup.Item>Bootstrap</ListGroup.Item>
-                    <ListGroup.Item>Node.js</ListGroup.Item>
-                </ListGroup>
-            </div>
-            <div className='col-4'>
-                <h3>Back-End</h3>
-                <ListGroup variant="flush">
-                    <ListGroup.Item>Python</ListGroup.Item>
-                    <ListGroup.Item>Java</ListGroup.Item>
-                    <ListGroup.Item>SQL</ListGroup.Item>
-                    <ListGroup.Item>PHP</ListGroup.Item>
-                    <ListGroup.Item>MySQL</ListGroup.Item>
-                    <ListGroup.Item>MongoDB</ListGroup.Item>
-                </ListGroup>
-            </div>
-            <div className='col-4'>
-                <h3>Tools</h3>
-                <ListGroup variant="flush">
-                    <ListGroup.Item>Git</ListGroup.Item>
-                    <ListGroup.Item>GitHub</ListGroup.Item>
-                    <ListGroup.Item>Visual Studio Code</ListGroup.Item>
-                    <ListGroup.Item>Android Studio</ListGroup.Item>
-                    <ListGroup.Item>IntelliJ</ListGroup.Item>
-                </ListGroup>
-            </div>
-            
-        </div>
-        
-        
+    <div className="container">
+      <div className="row">
+        <Card>
+          <Card.Body>
+            <Card.Title>
+              Skills
+              <Dropdown as={ButtonGroup}>
+                <Button variant="success">Split Button</Button>
+
+                <Dropdown.Toggle split variant="success" id="dropdown-split-basic" />
+
+                <Dropdown.Menu>
+                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>  
+            </Card.Title>
+            <Card.Text>
+              
+              {skills?.map((skill, index) => {
+                return (
+                  <Badge pill bg="secondary" className="m-1">
+                    {skill}
+                  </Badge>
+                );
+              })}
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Skills
+export default Skills;

@@ -10,9 +10,9 @@ function AboutMe() {
             <h1>About Me</h1>
         </div>
         <div className='row'>
-            <div className='col-6'>
+            <div className='col-3'>
                 <h3>Caleb Bergen</h3>
-                <Image fluid src={CalebImg} roundedCircle style={{height:"300px"}}/>
+                <Image fluid src={CalebImg} circle style={{height:"300px"}}/>
             </div>
             <div className='col-6'>
                 <h3>Objective</h3>
