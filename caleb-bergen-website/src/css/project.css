@@ -76,7 +76,12 @@ body{
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+    cursor: pointer;
 }
+.prog-prev:not(:hover){
+    animation: shrink 1s ease 0s 1 normal forwards;
+}
+
 @keyframes hoverOverProgPrev {
 	0% {
 		transform: scale(1);
@@ -86,9 +91,21 @@ body{
 		transform: scale(1.05);
 	}
 }
+
+@keyframes shrink {
+	0% {
+		transform: scale(1.05);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+
 .reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
     text-decoration: none;
     color: inherit;
     outline: 0;
-    cursor: auto;
+    cursor: pointer;
   }
