@@ -3,10 +3,12 @@ import AboutMe from '../components/AboutMe'
 import Education from '../components/Education'
 import Skills from '../components/Skills'
 import Work from '../components/Work'
+import '../css/project.css'
+
 
 function Home() {
   return (
-    <div className='border m-5'>
+    <div className='d-grid gap-5 '>
         <AboutMe />
         <Skills />
         <Education />

@@ -1,5 +1,94 @@
+.app-nav-bar {
+    background-color: #000000 !important;
+    color: #000;
+    
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-left: 0px !important;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card{
+    /* border-color: #000000 !important;
+    border-radius: 10px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); */
+    border: none !important;
+}
+
+.card-title{
+    font-size: 2em !important;
+    font-weight: 600 !important;
+    color: #000;
+    /* text-align: center !important; */
+
+}
+.card-subtitle{
+    font-size: 1.2em !important;
+    font-weight: 600 !important;
+    color: #000;
+    /* text-align: center !important; */
+}
+
+.content-window{
+    padding-top: 100px;
+    /* background-color: #E5E5E5; */
+}
+
+body{
+    background-color: #E5E5E5;
+}
+
 .project-card-slideshow{
     background-color: rgba(224, 217, 217, 0.8);
     border-radius: 10px;
     ;
 }
+
+.skill-pill{
+    padding: 10px !important;
+    font-size: 0.8em !important;
+}
+
+.footer {
+    margin-top: 15px;
+
+    width: 100%;
+    background-color: #E5E5E5;
+}
+.ResumeIMG {
+    transition: filter 0.3s ease;
+}
+
+.ResumeIMG:hover {
+    filter: brightness(75%);
+    
+}
+
+.prog-prev{
+    cursor: pointer;
+}
+
+.prog-prev:hover{
+    animation: hoverOverProgPrev 1s ease 0s normal forwards;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+@keyframes hoverOverProgPrev {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.05);
+	}
+}
+.reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+    cursor: auto;
+  }

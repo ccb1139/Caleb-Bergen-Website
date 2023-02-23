@@ -1,5 +1,6 @@
 import React from 'react'
 import WorkExperienceCard from './WorkExperienceCard'
+import Card from 'react-bootstrap/Card';
 
 function Work() {
   const CodeWizBullets = [
@@ -16,6 +17,8 @@ function Work() {
   return (
     <div className='container'>
         <div className='row'>
+          <Card.Title style={{textAlign:"center"}}>Work Experience</Card.Title>
+          <hr style={{marginTop:"16px"}}></hr>
             <WorkExperienceCard 
             JobTitle={"Instructor"} 
             Company={"CodeWizardsHQ"}

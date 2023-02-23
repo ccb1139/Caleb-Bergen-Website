@@ -12,6 +12,8 @@ function Education() {
         <div className='row'>
         <Card>
             <Card.Body>
+                <Card.Title style={{textAlign:"center"}}>Education</Card.Title>
+                <hr></hr>
                 <Card.Title>University of Massachusetts Lowell</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Lowell, MA</Card.Subtitle>
                 <Card.Text>
