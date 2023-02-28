@@ -17,7 +17,8 @@ function ContactForm() {
 
 
   return (
-    <div>
+    <div className='col-8 p-5'>
+        <h3>Send me a message</h3>
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
             <Form.Group controlId="formBasicEmail" className='d-flex flex-column'>
                 <Form.Label>Name</Form.Label>

@@ -6,15 +6,9 @@ import ContactInfo from '../components/ContactInfo';
 
 function Contact() {
   return (
-    <div className="container">
-        <div className='row'>
-            <div className='col-5'>
-                <ContactInfo />
-            </div>
-            <div className='col-5'>
-                <ContactForm />
-            </div>
-        </div>
+    <div className="container pt-5 d-flex justify-content-center" style={{height:"86vh"}}>
+        <ContactInfo />
+        <ContactForm />
         
         
         

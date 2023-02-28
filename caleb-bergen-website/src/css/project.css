@@ -1,5 +1,5 @@
 .app-nav-bar {
-    background-color: #000000 !important;
+    background-color: #ffffff !important;
     color: #000;
     
     font-size: 1.2em;
@@ -7,9 +7,32 @@
     padding: 10px;
     border-bottom: 1px solid #ccc;
     margin-left: 0px !important;
-
+    font-family: 'Raleway', sans-serif;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+.parallax-effect {
+    
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+  
+    transform-style: preserve-3d;
+  
+    
+  }
+  .inner-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-style: italic;
+    color: white;
+    transform: translateZ(30px);
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.3));
+    
+  }
 
 .card{
     /* border-color: #000000 !important;
@@ -33,8 +56,10 @@
 }
 
 .content-window{
-    padding-top: 100px;
+    padding-top: 48px;
     /* background-color: #E5E5E5; */
+    max-width: 100%;
+    font-family: 'Raleway', sans-serif;
 }
 
 body{
@@ -54,9 +79,9 @@ body{
 
 .footer {
     margin-top: 15px;
-
+    font-family: 'Raleway', sans-serif;
     width: 100%;
-    background-color: #E5E5E5;
+    /* background-color: #ffbf23; */
 }
 .ResumeIMG {
     transition: filter 0.3s ease;
@@ -66,6 +91,16 @@ body{
     filter: brightness(75%);
     
 }
+
+.prev-text{
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 .prog-prev{
     cursor: pointer;

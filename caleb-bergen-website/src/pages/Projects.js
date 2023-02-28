@@ -67,7 +67,7 @@ function Projects() {
 
 
     return (
-        <div className='container d-grid gap-3'>
+        <div className='container d-grid gap-3 pt-5'>
             <h1 className='text-center'>Projects</h1>
             <hr></hr>
             <h5 className='text-center' >Completed</h5>
