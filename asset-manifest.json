@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1f716f1e.css",
-    "main.js": "/static/js/main.5da8aae3.js",
+    "main.css": "/static/css/main.7afba76a.css",
+    "main.js": "/static/js/main.6afba12a.js",
     "static/js/787.883b893c.chunk.js": "/static/js/787.883b893c.chunk.js",
     "static/media/home.png": "/static/media/home.c406bd570aff34dfa290.png",
     "static/media/notifcations.png": "/static/media/notifcations.a51d7b73ba74e198fd39.png",
@@ -15,6 +15,7 @@
     "static/media/landingpage.png": "/static/media/landingpage.ecdc0f9274d7daa84a97.png",
     "static/media/Acheivements.png": "/static/media/Acheivements.dc34b8e980031e2b12b3.png",
     "static/media/sign-in.png": "/static/media/sign-in.03c072402f9e4e4b1c05.png",
+    "static/media/bgGrad2.png": "/static/media/bgGrad2.a0114f11a151c45bfc84.png",
     "static/media/React-icon.svg.png": "/static/media/React-icon.svg.8a6fc0a24a800d1e0f4a.png",
     "static/media/Resume.pdf": "/static/media/Resume.2f8e724fdd73a9623d11.pdf",
     "static/media/watercolor.jpg": "/static/media/watercolor.8c31d78096dc635dc8a6.jpg",
@@ -34,12 +35,12 @@
     "static/media/main-menu.png": "/static/media/main-menu.e854278e65412269f2b9.png",
     "static/media/HTML5Logo.png": "/static/media/HTML5Logo.eebc3fbfbde4b2abd9db.png",
     "index.html": "/index.html",
-    "main.1f716f1e.css.map": "/static/css/main.1f716f1e.css.map",
-    "main.5da8aae3.js.map": "/static/js/main.5da8aae3.js.map",
+    "main.7afba76a.css.map": "/static/css/main.7afba76a.css.map",
+    "main.6afba12a.js.map": "/static/js/main.6afba12a.js.map",
     "787.883b893c.chunk.js.map": "/static/js/787.883b893c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f716f1e.css",
-    "static/js/main.5da8aae3.js"
+    "static/css/main.7afba76a.css",
+    "static/js/main.6afba12a.js"
   ]
 }
