@@ -9,6 +9,7 @@ import Footer from './components/Structural/Footer';
 import ScrollToTop from './components/Structural/ScrollToTop';
 import './css/project.css'
 
+
 // Colors
 //  https://coolors.co/000000-14213d-fca311-e5e5e5-ffffff
 

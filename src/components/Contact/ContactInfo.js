@@ -1,36 +1,33 @@
 import React from 'react'
+import FindMeCard from './FindMeCard';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { Link } from 'react-router-dom';
+import Tilt from 'react-parallax-tilt';
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiOutlineMail } from 'react-icons/ai';
+import { AiFillGithub } from "react-icons/ai";
+import { AiOutlineFileText } from "react-icons/ai";
+
 import resume from '../../img/Resume.pdf'
 
 function ContactInfo() {
   return (
-    <div className='col-xl-4 col-12 p-5'>
-        <div>
-            <h3>Where to find me</h3>
-            {/* <ListGroup>
-                <ListGroup.Item>Email:
-                    <a href="mailto:calebbergen000@gmail.com">calebbergen000@gmail.com</a>
-                </ListGroup.Item>
-                <ListGroup.Item>Phone: (978)-793-3583 </ListGroup.Item>
-                <ListGroup.Item>LinkedIn:
-                    <a href="https://www.linkedin.com/in/caleb-bergen-62b395236/?trk=public-profile-join-page" target="_blank">Caleb Bergen</a>
-                </ListGroup.Item>
-                <ListGroup.Item>Github:
-                    <a href="https://github.com/ccb1139" target="_blank">ccb1139</a>
-                </ListGroup.Item>
-                <ListGroup.Item>
-                    Resume:
-                    <Link to={resume}>Resume</Link>
-                </ListGroup.Item>
-                
+    <div className='col-md-4 col-12 ' style={{minWidth:"150px"}}>
+        <div className='d-flex flex-column'>
+            <h3>My Links</h3>
+            <FindMeCard link="mailto:calebbergen000@gmail.com" 
+            icon={<AiOutlineMail size={50} className="mx-2"/>} 
+            text="Email"/>
+            <FindMeCard link="https://github.com/ccb1139" 
+            icon={<AiFillGithub size={50} className="mx-2"/>}
+            text="Github"/>
+            <FindMeCard link="https://www.linkedin.com/in/caleb-bergen-62b395236"
+            icon={<AiFillLinkedin size={50} className="mx-2"/>}
+            text="LinkedIn"/>
+            <FindMeCard link={resume}
+            icon={<AiOutlineFileText size={50} className="mx-2"/>}
+            text="Resume"/>
 
-            </ListGroup> */}
-            <p>Email: <a href="mailto:calebbergen000@gmail.com">calebbergen000@gmail.com</a></p>
-            <p>Phone: (978)-793-3583</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/caleb-bergen-62b395236/?trk=public-profile-join-page" target="_blank">Caleb Bergen</a></p>
-            <p>Github: <a href="https://github.com/ccb1139" target="_blank">ccb1139</a></p>
-            <p>Resume: <Link to={resume}>Resume</Link></p>
         </div>
     </div>
   )

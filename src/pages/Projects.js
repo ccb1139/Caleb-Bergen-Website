@@ -3,6 +3,8 @@ import { useState, useEffect, useRef } from "react";
 
 import ProjectCard from '../components/Projects/ProjectCard'
 import { Parallax } from 'react-parallax';
+import ParticlesLandingPage from '../components/LandingPage/particlesLandingPage';
+
 
 import bgGrad from "../img/backgrounds/bgGrad.png"
 
@@ -72,6 +74,7 @@ function Projects() {
 
     return (
         <Parallax blur={10} bgImage={bgGrad} bgImageAlt="the cat" strength={100} >
+            <ParticlesLandingPage/>
         <div className='d-grid gap-3 pt-5'>
             
             <h1 className='text-center'>Projects</h1>

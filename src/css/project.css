@@ -10,6 +10,9 @@
     font-family: 'Raleway', sans-serif;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
+h1{
+    z-index: 1000;
+}
 
 .navbar-brand{
     margin-right: 0px!important;
@@ -190,4 +193,22 @@ font-size: 4em;
 .lp-Title {
     font-size: 3em;
 }
+}
+
+.form-sub-btn{
+
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.0)!important;
+    border: none;
+}
+
+.contact-me-btn{
+    padding: 15px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.0)!important;
+    border: solid 1px #000000;
+    border-radius: 20px;
 }

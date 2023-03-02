@@ -4,7 +4,9 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { AiFillGithub } from "react-icons/ai";
 import Tilt from 'react-parallax-tilt';
 import { AiFillLinkedin } from "react-icons/ai";
+import { AiOutlineFileText } from "react-icons/ai";
 import BackToTopButton from "./BackToTopButton.js";
+import resume from '../../img/Resume.pdf'
 
 function Footer() {
   return (
@@ -16,23 +18,34 @@ function Footer() {
         </div>      
         <div className="col-lg-10 col-8">
           <div className="m-auto py-2">
-            <h5>Find me</h5>
-            <Link to="mailto:calebbergen000@gmail.com" className="nav-link d-inline-block">
+            <h5>Have a question?</h5>
+            <Link to="/contact"  className="nav-link d-inline-block">
+              <Tilt tiltEnable={false} scale={1.1} className="">
+                <p className="contact-me-btn">Find Me!</p>
+                {/* <AiOutlineMail size={50} className="mx-2"/> */}
+              </Tilt>
+            </Link>
+            {/* <Link to="mailto:calebbergen000@gmail.com" target="_blank" className="nav-link d-inline-block">
               <Tilt tiltEnable={false} scale={1.1} className="">
 
                 <AiOutlineMail size={50} className="mx-2"/>
               </Tilt>
             </Link>
-            <Link to="https://github.com/ccb1139" className="nav-link d-inline-block">
-              <Tilt tiltEnable={false} scale={1.05} className="d-inline-block">
+            <Link to="https://github.com/ccb1139" target="_blank" className="nav-link d-inline-block">
+              <Tilt tiltEnable={false} scale={1.1} className="d-inline-block">
                 <AiFillGithub size={50} className="mx-2"/>
               </Tilt>
             </Link>
-            <Link to="https://www.linkedin.com/in/caleb-bergen-62b395236" className="nav-link d-inline-block">
-              <Tilt tiltEnable={false} scale={1.05} className="d-inline-block">
+            <Link to="https://www.linkedin.com/in/caleb-bergen-62b395236" target="_blank" className="nav-link d-inline-block">
+              <Tilt tiltEnable={false} scale={1.1} className="d-inline-block">
                 <AiFillLinkedin size={50} className="mx-2"/>
               </Tilt>
             </Link>
+            <Link to={resume} target="_blank" className="nav-link d-inline-block">
+              <Tilt tiltEnable={false} scale={1.1} className="d-inline-block">
+                <AiOutlineFileText size={50} className="mx-2"/>
+              </Tilt>
+            </Link> */}
             <div className="footer-btm container mt-auto d-flex mb-2">
               <p className="m-auto">© All rights reserved by Caleb Bergen</p>          
             </div>

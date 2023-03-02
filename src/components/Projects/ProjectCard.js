@@ -10,7 +10,8 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import Tooltip from "react-bootstrap/Tooltip";
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tilt from 'react-parallax-tilt';
-
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
 
 import { CarouselItem } from 'react-bootstrap';
 import '../../css/project.css'
@@ -36,15 +37,17 @@ function ProjectCard({ Name, Description, Link, GithubLink, imgs, TechUsed, c_id
     return (
         <Card className='project-card container' id={c_id}>
             {imgs?.length > 1 ?
+            <PhotoProvider>
                 <Carousel variant={dark ? "dark ": "light"} className='drop-shadow-filter' interval={5000}>
                     {imgs?.map((img, index) => {
                         return (
                             
                             <Carousel.Item key={index}>
-                                <Image src={img.img} alt={img.caption} className='d-block w-100 box-shadow-filter' style={{ maxWidth: "", height: "auto", borderRadius: "6px" }} />
-                                
+                                <PhotoView index={index} src={img.img}>
+                                <Image src={img.img} alt={img.caption} className='d-block w-100 box-shadow-filter' style={{ maxWidth: "", height: "auto", borderRadius: "6px", cursor:"zoom-in" }} />
+                                </PhotoView>
                                 <div className='text-dark project-card-slideshow carosel-captiom-custom'>
-                                    <h3>{img.caption}</h3>
+                                    {/* <h3>{img.caption}</h3> */}
                                     <p>{img.desc}</p>
                                 </div>
                             </Carousel.Item>
@@ -54,7 +57,9 @@ function ProjectCard({ Name, Description, Link, GithubLink, imgs, TechUsed, c_id
                     
 
                 </Carousel>
+                </PhotoProvider>
             : null}
+            
             <Card.Body style={{ border: "none" }}>
                 <Card.Title style={{ textAlign: "center" }}>{Name}</Card.Title>
                 <div className='row'>

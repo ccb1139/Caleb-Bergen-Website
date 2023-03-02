@@ -29,7 +29,7 @@ const particleOptions = {
     interactivity: {
         events: {
             onClick: {
-                enable: true,
+                enable: false,
                 mode: "push",
             },
             onHover: {
@@ -38,7 +38,7 @@ const particleOptions = {
             },
             onDiv: [
               {
-                enable: true,
+                enable: false,
                 selectors: ".avoid ",
                 mode: "repulse",
                 type: "rectangle",
@@ -62,7 +62,7 @@ const particleOptions = {
         },
         links: {
             color: "#ffffff",
-            distance: 150,
+            distance: 115,
             enable: true,
             opacity: 0.5,
             width: 1,
@@ -85,7 +85,7 @@ const particleOptions = {
                 enable: true,
                 area: 800,
             },
-            value: 80,
+            value: 30,
         },
         opacity: {
             value: 0.8,
@@ -94,7 +94,7 @@ const particleOptions = {
             type: "circle",
         },
         size: {
-            value: { min: 1, max: 5 },
+            value: { min: 1, max: 3 },
         },
     },
     // detectRetina: true,

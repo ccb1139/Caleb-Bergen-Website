@@ -124,7 +124,7 @@ function ParticlesLandingPage({main}) {
             init={(main ? particlesInit : particlesInitAlt)}
             loaded={particlesLoaded}
             options={(main ? particleOptions2 : particleOptions)}
-            
+            style={{zIndex: -1}}
         />
         </>
   )
