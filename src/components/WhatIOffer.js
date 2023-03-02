@@ -11,14 +11,14 @@ function WhatIOffer() {
                 
                 <div className='row ' style={{marginLeft:"10%", zIndex:"1000"}}>
                     <div className="col-10  align-self-start landing-name-text no-select">
-                        <p style={{fontSize: "8em", marginBottom: "0px"}} className=""
+                        <p className="lp-Name" 
                         >Caleb Bergen</p>
-                        <p style={{fontSize: "4em"}}
+                        <p className="lp-Title"
                         >Software Engineer</p>             
 
                     </div>
                 </div>
-                <ParticlesLandingPage />
+                
             </div>
         </>
     )

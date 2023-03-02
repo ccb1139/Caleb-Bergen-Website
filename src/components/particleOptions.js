@@ -330,6 +330,14 @@ const particleOptions = {
                 enable: true,
                 mode: "repulse",
             },
+            onDiv: [
+              {
+                enable: true,
+                selectors: ".avoid ",
+                mode: "repulse",
+                type: "rectangle",
+              },
+            ],
             resize: true,
         },
         modes: {

@@ -9,12 +9,12 @@ import { AiFillLinkedin } from "react-icons/ai";
 
 function CustomNavBar() {
   return (
-    <Navbar expand="lg" className='row px-5 py-1 mb-1 fixed-top app-nav-bar '>
+    <Navbar expand="lg" className='row px-5 py-1 mb-1 fixed-top app-nav-bar text-center'>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav" className='px-5'>
+    <Navbar.Collapse id="basic-navbar-nav" className='px-5 border-0'>
       
     
-      <Nav className="mr-auto px-5">
+      <Nav className="mr-auto ">
         <NavbarBrand className="" href="/">Caleb Bergen</NavbarBrand>
       </Nav>
       <Nav className='ms-auto px-5'>

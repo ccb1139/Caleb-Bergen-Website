@@ -11,6 +11,15 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+.navbar-brand{
+    margin-right: 0px!important;
+}
+.navbar-toggler:focus, .navbar-toggler:hover, .navbar-toggler:active, .navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 .parallax-effect {
     
     color: white;
@@ -33,7 +42,10 @@
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.3));
     
   }
-
+.lpd{
+    z-index: 1000!important;
+    position: unset !important;
+}
 .card{
     /* border-color: #000000 !important;
     border-radius: 10px !important;
@@ -151,3 +163,23 @@ body{
     outline: 0;
     cursor: pointer;
   }
+
+.lp-Name {
+font-size: 8em;
+margin-bottom: 0px;
+}
+
+.lp-Title {
+font-size: 4em;
+}
+
+/* Media query for medium breakpoint and below */
+@media (max-width: 768px) {
+.lp-Name {
+    font-size: 6em;
+}
+
+.lp-Title {
+    font-size: 3em;
+}
+}

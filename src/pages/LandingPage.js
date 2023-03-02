@@ -20,6 +20,7 @@ function LandingPage() {
   return (
     <div className='text-center ' style={{maxWidth:"100%"}}>
       <Parallax blur={10} bgImage={bgGrad} bgImageAlt="the cat" strength={100} >
+      <ParticlesLandingPage />
         <div className='lpd lpd-t vh-100  ' >
             
             <WhatIOffer />

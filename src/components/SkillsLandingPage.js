@@ -39,18 +39,18 @@ function AboutLandingPage({animate}) {
     <>
     <h1>About </h1>
     <hr></hr>
-    <div className={'container col-10 justify-content-center ' + (isVisible ? "skills-div" : "invisible")} ref={animatedRef}>
-        <div className="row vh-100 align-content-center " >
-            <div className='col-6'>
+    <div className={'container col-10 justify-content-center ' + (isVisible ? "skills-div" : "invisible")} ref={animatedRef} style={{minWidth:"250px"}}>
+        <div className="row align-content-center " style={{minHeight:"100vh"}}>
+            <div className='col-lg-6 col-md-12'>
                 {/* <AiOutlineUser size={100} /> */}
                 <Image src={CalebPic2} fluid alt="Caleb Photo" style={{borderRadius:"20px", maxWidth:"250px", marginBottom:"50px",}} />
                 
-                <p className='text-center text-wrap col-10 m-auto prev-text'>
+                <p className='text-center text-wrap col-10 m-auto prev-text '>
                 As a web developer, I am passionate about designing and developing high-quality websites that meet the needs of clients and users. As a reliable and organized individual with excellent communication skills, I am confident in my ability to create innovative solutions that deliver optimal user experiences and value to businesses. I am excited to bring my skills and expertise to your team.
                 </p>
                 
             </div>
-            <div className={'d-flex flex-wrap col-6 justify-content-center align-content-center ms-auto ' + (isVisible2 ? "" : "invisible")}>
+            <div className={'d-flex flex-wrap col-lg-6 col-md-12 justify-content-center align-content-center ms-auto ' + (isVisible2 ? "" : "invisible")}>
                 <SkillCard title={"React.js"} img={reactLogo} visible={isVisible}/>
                 <SkillCard title={"Node.js"} img={NodeLogo} visible={isVisible}/>
                 <SkillCard title={"HTML"} img={HtmlLogo} visible={isVisible}/>

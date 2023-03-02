@@ -30,7 +30,7 @@ function BackToTopButton() {
   return (
     <>
       {showButton &&
-        <Tilt tiltEnable={false} scale={1.05} className="ms-auto">
+        <Tilt tiltEnable={false} scale={1.05} className="ms-auto" style={{cursor:"pointer"}}>
             <BsArrowBarUp size={50} className="mx-2" onClick={handleButtonClick}/>
         </Tilt>
         

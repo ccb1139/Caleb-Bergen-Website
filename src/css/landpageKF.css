@@ -30,6 +30,9 @@
 
 .proj-left-anim{
 	/* animation: proj-left-anim 1s cubic-bezier(0.45, 0, 0.55, 1) 0s 1 normal forwards; */
+	position: relative;
+	z-index: 1000!important;
+	
 }
 @keyframes proj-left-anim {
 	0% {
@@ -45,6 +48,8 @@
 
 .proj-right-anim{
 	/* animation: proj-right-anim 1s linear 0s 1 normal forwards; */
+	position: relative;
+	z-index: 1000!important;
 }
 @keyframes proj-right-anim {
 	0% {

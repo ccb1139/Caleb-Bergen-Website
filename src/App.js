@@ -6,6 +6,7 @@ import CustomNavBar from './components/CustomNavBar';
 import Contact from './pages/Contact';
 import LandingPage from './pages/LandingPage';
 import Footer from './components/Footer';
+
 import './css/project.css'
 
 // Colors
