@@ -93,16 +93,24 @@ function ProjectPrev({ title, img, description, link, GithubLink, skills, flippe
           }
         </div>
 
-        <div className="col-12">
+        <div className="col-12 d-flex mt-3">
           {GithubLink ? <OverlayTrigger placement="bottom" overlay={<Tooltip id="tooltip-disabled">View Project</Tooltip>}>
-            <div className='px-2 d-inline-block' style={{ width: 'fit-content', cursor: 'pointer' }} onClick={(e) => openNewLink(e, 'gitLink')}>
-                <AiFillGithub size={"2em"} />
+            <div className='px-2 ' style={{ width: 'fit-content', cursor: 'pointer' }} onClick={(e) => openNewLink(e, 'gitLink')}>
+            <Tilt tiltEnable={false} scale={1.1} className="">
+
+              <AiFillGithub size={"2em"} />
+            </Tilt>
+                
             </div>
           </OverlayTrigger>
           : null}
           {link ? <OverlayTrigger placement="bottom" overlay={<Tooltip id="tooltip-disabled">Live Website</Tooltip>}>
-            <div className='px-2 d-inline-block' style={{ width: 'fit-content', cursor: 'pointer' }} onClick={(e) => openNewLink(e, 'progLink')}>
-                <FaExternalLinkAlt size={"2em"} />
+            <div className='px-2 ' style={{ width: 'fit-content', cursor: 'pointer' }} onClick={(e) => openNewLink(e, 'progLink')}>
+                
+                <Tilt tiltEnable={false} scale={1.1} className="">
+
+                  <FaExternalLinkAlt size={"2em"} />
+                </Tilt>
             </div>
           </OverlayTrigger>
           : null}

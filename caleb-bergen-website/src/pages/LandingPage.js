@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useIntersection } from 'react-use';
-import { Image } from 'react-bootstrap';
-
+import ParticlesLandingPage from '../components/particlesLandingPage';
 
 import WhatIOffer from '../components/WhatIOffer';
 import ProjectPreviews from '../components/ProjectPreviews';
@@ -18,10 +16,12 @@ import grad2 from "../img/backgrounds/grad2.jpg"
 import grad3 from "../img/backgrounds/grad3.jpg"
 
 function LandingPage() {
+  
   return (
     <div className='text-center ' style={{maxWidth:"100%"}}>
       <Parallax blur={10} bgImage={bgGrad} bgImageAlt="the cat" strength={100} >
         <div className='lpd lpd-t vh-100  ' >
+            
             <WhatIOffer />
         </div>
         <div className='lpd'>

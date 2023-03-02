@@ -8,8 +8,8 @@ function SkillCard({title, img, visible}) {
   const animNum = (Math.floor(Math.random() * 3) + 1).toString();
 
   return (
-    <OverlayTrigger placement="bottom" overlay={<Tooltip id="tooltip-disabled">{title}</Tooltip>} >
-      <div className={'m-3 p-3 '+(visible ? ("sc-anim-" + animNum) : "invisible")} style={{position: "relative"}}>
+    <OverlayTrigger placement="top" overlay={<Tooltip id="tooltip-disabled">{title}</Tooltip>} >
+      <div className={'m-3 p-3 '+(visible ? ("sc-anim-" + animNum) : "invisible")} style={{position: "relative", }}>
           <Tilt
           className="parallax-effect"
           perspective={500}
@@ -21,7 +21,7 @@ function SkillCard({title, img, visible}) {
           glareBorderRadius="20px"
           glarePosition="bottom"
           >
-            <div className="d-flex align-items-center inner-element p-3" style={{height:"130px", width:"130px", margin:"auto"}}>
+            <div className="d-flex align-items-center inner-element px-3" style={{height:"130px", width:"130px", margin:"auto"}}>
               
                 <Image src={img} fluid rounded className="hover-shadow m-auto" />
               
