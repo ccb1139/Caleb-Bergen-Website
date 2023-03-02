@@ -2,16 +2,25 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useIntersection } from 'react-use';
 import SkillCard from './SkillCard';
 import { Image } from 'react-bootstrap';
+import ParticlesLandingPage from './particlesLandingPage';
+import { useCallback } from "react";
+
+
+//Particle Imports
+import Particles from "react-particles";
+import { loadFull } from "tsparticles";
+import particleOptions from './particleOptions';
+
 // Logo Imports
 
-import reactLogo from '../img/project-logos/React-icon.svg.png';
-import NodeLogo from '../img/project-logos/nodeJsLogo.png';
-import PythonLogo from '../img/project-logos/pythonLogo.png';
-import HtmlLogo from '../img/project-logos/HTML5Logo.png';
-import CssLogo from '../img/project-logos/CSS-Logo.png';
-import JsLogo from '../img/project-logos/JavaScript-Logo.png';
-import CalebPic from '../img/calebMainPage.jpg';
-import CalebPic2 from '../img/Caleb.jpg';
+import reactLogo from '../../img/project-logos/React-icon.svg.png';
+import NodeLogo from '../../img/project-logos/nodeJsLogo.png';
+import PythonLogo from '../../img/project-logos/pythonLogo.png';
+import HtmlLogo from '../../img/project-logos/HTML5Logo.png';
+import CssLogo from '../../img/project-logos/CSS-Logo.png';
+import JsLogo from '../../img/project-logos/JavaScript-Logo.png';
+import CalebPic from '../../img/calebMainPage.jpg';
+import CalebPic2 from '../../img/Caleb.jpg';
 
 import { AiOutlineUser } from "react-icons/ai";
 
@@ -31,21 +40,22 @@ function AboutLandingPage({animate}) {
     }
   }, [intersection]);
 
-  const [_animate, setAnimate] = useState(animate)
 
 
   // console.log(animate)
   return (
     <>
+    
     <h1>About </h1>
     <hr></hr>
     <div className={'container col-10 justify-content-center ' + (isVisible ? "skills-div" : "invisible")} ref={animatedRef} style={{minWidth:"250px"}}>
+    
         <div className="row align-content-center " style={{minHeight:"100vh"}}>
             <div className='col-lg-6 col-md-12'>
                 {/* <AiOutlineUser size={100} /> */}
-                <Image src={CalebPic2} fluid alt="Caleb Photo" style={{borderRadius:"20px", maxWidth:"250px", marginBottom:"50px",}} />
+                <Image src={CalebPic2} fluid alt="Caleb Photo" className="drop-shadow-filter" style={{borderRadius:"20px", maxWidth:"250px", marginBottom:"50px",}} />
                 
-                <p className='text-center text-wrap col-10 m-auto prev-text '>
+                <p className='text-center text-wrap col-10 m-auto prev-text'>
                 As a web developer, I am passionate about designing and developing high-quality websites that meet the needs of clients and users. As a reliable and organized individual with excellent communication skills, I am confident in my ability to create innovative solutions that deliver optimal user experiences and value to businesses. I am excited to bring my skills and expertise to your team.
                 </p>
                 

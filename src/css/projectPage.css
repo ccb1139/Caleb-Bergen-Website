@@ -1,0 +1,21 @@
+.project-card {
+    background-color: rgba(224, 217, 217, 0.0)!important;
+    /* padding: 10px;
+    border-radius: 20px!important; */
+}
+.carosel-captiom-custom{
+    text-align: center;
+    /* font-style: italic; */
+}
+.carosel-captiom-custom p{
+    text-align: center;
+    font-style: italic;
+}
+.carousel-indicators{
+    margin-bottom: 80px!important;
+}
+.project-card-slideshow{
+    /* background-color: rgba(224, 217, 217, 0.8); */
+    margin-top: 30px;
+    
+}

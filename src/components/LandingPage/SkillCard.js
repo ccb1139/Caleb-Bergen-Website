@@ -11,7 +11,7 @@ function SkillCard({title, img, visible}) {
     <OverlayTrigger placement="top" overlay={<Tooltip id="tooltip-disabled">{title}</Tooltip>} >
       <div className={'m p-3 '+(visible ? ("sc-anim-" + animNum) : "invisible")} style={{position: "relative", }}>
           <Tilt
-          className="parallax-effect"
+          className="parallax-effect drop-shadow-filter"
           perspective={500}
           scale={1.05}
           tiltMaxAngleX={10}

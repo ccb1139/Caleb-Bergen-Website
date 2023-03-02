@@ -2,11 +2,11 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-import CustomNavBar from './components/CustomNavBar';
+import CustomNavBar from './components/Structural/CustomNavBar';
 import Contact from './pages/Contact';
 import LandingPage from './pages/LandingPage';
-import Footer from './components/Footer';
-import ScrollToTop from './components/ScrollToTop';
+import Footer from './components/Structural/Footer';
+import ScrollToTop from './components/Structural/ScrollToTop';
 import './css/project.css'
 
 // Colors

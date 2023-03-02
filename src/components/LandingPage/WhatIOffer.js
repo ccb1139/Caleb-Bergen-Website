@@ -1,14 +1,13 @@
 import React from 'react'
-import ParticlesLandingPage from '../components/particlesLandingPage';
+import ParticlesLandingPage from './particlesLandingPage';
 
 function WhatIOffer() {
     
 
     return (
         <>
-            
             <div className='d-flex flex-column vh-100 justify-content-center text-start landing-name' >
-                
+                {/* <ParticlesLandingPage main/> */}
                 <div className='row ' style={{marginLeft:"10%", zIndex:"1000"}}>
                     <div className="col-10  align-self-start landing-name-text no-select">
                         <p className="lp-Name" 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect, useRef } from "react";
 
-import ProjectCard from '../components/ProjectCard'
+import ProjectCard from '../components/Projects/ProjectCard'
 import { Parallax } from 'react-parallax';
 
 import bgGrad from "../img/backgrounds/bgGrad.png"
@@ -28,6 +28,7 @@ import yh_ReRoll from '../img/yahtzee-haskell/re-roll.png'
 import yh_FillZero from '../img/yahtzee-haskell/fill-zero.png'
 import yh_GameOver from '../img/yahtzee-haskell/gameover.png'
 
+import '../css/projectPage.css'
 
 function Projects() {
     const [getItDoneArr, setGetItDoneArr] = useState([])
@@ -71,19 +72,20 @@ function Projects() {
 
     return (
         <Parallax blur={10} bgImage={bgGrad} bgImageAlt="the cat" strength={100} >
-        <div className='container d-grid gap-3 pt-5'>
+        <div className='d-grid gap-3 pt-5'>
             
             <h1 className='text-center'>Projects</h1>
             <hr></hr>
-            <h5 className='text-center' >Completed</h5>
+            {/* <h5 className='text-center' >Completed</h5> */}
             <ProjectCard
-                Name={"Get-it-Done"}
+                Name={"Get-it-Done: Gamified To-Do List"}
                 c_id={"get-it-done"}
                 Link={"https://get-it-done-gamefied.web.app/"}
                 GithubLink={"https://github.com/ccb1139/Get-it-Done-Gamified-to-do-list"}
                 imgs = {getItDoneArr}
                 Description={"Get-it-Done is a gamified to-do list app that helps users stay organized and on track. Users can add tasks, set due dates, and earn achievements and customizations as they complete tasks. Developed during a GUI class at the University of Massachusetts Lowell, the app is an excellent example of applying programming, user interface design, and game mechanics to create a useful and engaging application. \n\nWith its unique features and focus on productivity, Get-it-Done is a great tool for anyone looking to stay motivated and organized."}
                 TechUsed = {["React", "Firebase", "Bootstrap", "Node.js", "JavaScript", "HTML", "CSS"]}
+                dark
             ></ProjectCard >
             <hr></hr>
             <ProjectCard
@@ -93,6 +95,7 @@ function Projects() {
                 imgs = {lmsArr}
                 Description={"The Blackboard LMS notification re-vamp is a project I completed for my Software Engineering class. The project aimed to improve the user experience of the Blackboard LMS notification system by implementing a more user-friendly interface. With this new interface, users can view their notifications in a more organized and accessible way. \n\nAdditionally, the system allows for filtering notifications by type and searching for courses, providing an added layer of convenience and customization. Overall, the Blackboard LMS notification re-vamp is a prime example of how software engineering can be used to improve the usability and functionality of existing software systems."}
                 TechUsed = {["React", "Heroku", "Tailwind CSS", "Node.js", "JavaScript", "HTML", "CSS", "npm"]}
+                dark
                 ></ProjectCard>
             <hr></hr>
             <ProjectCard
@@ -104,7 +107,7 @@ function Projects() {
                 TechUsed = {["Haskell", "Haskell Stack", "Stack"]}
                 ></ProjectCard>
 
-            <h5 className='text-center'>Work in progress</h5>
+            {/* <h5 className='text-center'>Work in progress</h5> */}
 
 
             

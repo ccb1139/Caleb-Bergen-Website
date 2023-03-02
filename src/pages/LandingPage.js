@@ -1,11 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
-import ParticlesLandingPage from '../components/particlesLandingPage';
-
-import WhatIOffer from '../components/WhatIOffer';
-import ProjectPreviews from '../components/ProjectPreviews';
+import ParticlesLandingPage from '../components/LandingPage/particlesLandingPage';
+import WhatIOffer from '../components/LandingPage/WhatIOffer';
+import ProjectPreviews from '../components/LandingPage/ProjectPreviews';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { Parallax } from 'react-parallax';
-import AboutLandingPage from '../components/SkillsLandingPage';
+import AboutLandingPage from '../components/LandingPage/SkillsLandingPage';
 import '../css/landpageKF.css'
 
 //Picture Imports
@@ -16,23 +15,29 @@ import grad2 from "../img/backgrounds/grad2.jpg"
 import grad3 from "../img/backgrounds/grad3.jpg"
 
 function LandingPage() {
-  
+
   return (
-    <div className='text-center ' style={{maxWidth:"100%"}}>
+    <div className='text-center ' style={{ maxWidth: "100%" }}>
       <Parallax blur={10} bgImage={bgGrad} bgImageAlt="the cat" strength={100} >
-      <ParticlesLandingPage />
+        <ParticlesLandingPage main/>
         <div className='lpd lpd-t vh-100  ' >
-            
-            <WhatIOffer />
+
+          <WhatIOffer />
         </div>
-        <div className='lpd'>
-            <AboutLandingPage animate={true}/>
-        </div>
-        <div className='lpd'>
+        {/* <LandingPageBottom /> */}
+        <div className="lpd-b row" style={{position:"relative"}}>
+          {/* <ParticlesLandingPage /> */}
+          <div className='lpd'>
+
+            <AboutLandingPage animate={true} />
+          </div>
+          <div className='lpd'>
             <ProjectPreviews />
+          </div>
         </div>
-        </Parallax>
-        
+      </Parallax>
+
+
 
     </div>
   )

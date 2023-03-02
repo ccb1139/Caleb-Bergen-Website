@@ -5,8 +5,8 @@ import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import Card from "react-bootstrap/Card";
-import SkillPills from "./SkillPills";
-import '../css/project.css'
+import SkillPills from "../SkillPills";
+import '../../css/project.css'
 
 function Skills() {
   const [skills, setSkills] = useState([]);

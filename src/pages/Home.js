@@ -1,8 +1,8 @@
 import React from 'react'
-import AboutMe from '../components/AboutMe'
-import Education from '../components/Education'
-import Skills from '../components/Skills'
-import Work from '../components/Work'
+import AboutMe from '../components/AboutMe/AboutMe'
+import Education from '../components/AboutMe/Education'
+import Skills from '../components/AboutMe/Skills'
+import Work from '../components/AboutMe/Work'
 import '../css/project.css'
 
 

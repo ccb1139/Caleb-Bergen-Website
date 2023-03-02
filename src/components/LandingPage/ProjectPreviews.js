@@ -1,15 +1,15 @@
 import React, { useEffect, useLayoutEffect  } from 'react'
 import { Switch, Route, useLocation } from 'react-router-dom';
-import ProjectPrev from '../components/ProjectPrev';
+import ProjectPrev from './ProjectPrev';
 import { Parallax } from 'react-parallax';
 
-import gid_signin from '../img/get-it-done-img/sign-in.png'
-import GidLogo from '../img/project-logos/gidLogo.png';
-import PantryLogo from '../img/project-logos/pantryLogo.jpg';
-import umlLogo from '../img/project-logos/uml.png';
+import gid_signin from '../../img/get-it-done-img/sign-in.png'
+import GidLogo from '../../img/project-logos/gidLogo.png';
+import PantryLogo from '../../img/project-logos/pantryLogo.jpg';
+import umlLogo from '../../img/project-logos/uml.png';
 
-import gid_landingpage from '../img/get-it-done-img/landingpage.png'
-import lms_Notifications from '../img/lms-img/notifcations.png'
+import gid_landingpage from '../../img/get-it-done-img/landingpage.png'
+import lms_Notifications from '../../img/lms-img/notifcations.png'
 
 function ProjectPreviews() {
   const location = useLocation();
