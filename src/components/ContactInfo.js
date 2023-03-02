@@ -5,7 +5,7 @@ import resume from '../img/Resume.pdf'
 
 function ContactInfo() {
   return (
-    <div className='col-4 p-5'>
+    <div className='col-xl-4 col-12 p-5'>
         <div>
             <h3>Where to find me</h3>
             <ListGroup>

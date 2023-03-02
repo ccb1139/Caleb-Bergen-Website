@@ -2,6 +2,9 @@ import React from 'react'
 import { useState, useEffect, useRef } from "react";
 
 import ProjectCard from '../components/ProjectCard'
+import { Parallax } from 'react-parallax';
+
+import bgGrad from "../img/backgrounds/bgGrad.png"
 
 // Get It Done Imgs
 import gid_AchImgs from '../img/get-it-done-img/Acheivements.png'
@@ -67,7 +70,9 @@ function Projects() {
 
 
     return (
+        <Parallax blur={10} bgImage={bgGrad} bgImageAlt="the cat" strength={100} >
         <div className='container d-grid gap-3 pt-5'>
+            
             <h1 className='text-center'>Projects</h1>
             <hr></hr>
             <h5 className='text-center' >Completed</h5>
@@ -116,8 +121,9 @@ function Projects() {
 
             </ProjectCard>
             
-
+            
         </div>
+        </Parallax>
     )
 }
 

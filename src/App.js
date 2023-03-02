@@ -6,7 +6,7 @@ import CustomNavBar from './components/CustomNavBar';
 import Contact from './pages/Contact';
 import LandingPage from './pages/LandingPage';
 import Footer from './components/Footer';
-
+import ScrollToTop from './components/ScrollToTop';
 import './css/project.css'
 
 // Colors
@@ -17,6 +17,7 @@ function App() {
     <>
       <CustomNavBar/>
       <div className='content-window'>
+        <ScrollToTop/>
         <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/aboutMe" element={<Home />} />

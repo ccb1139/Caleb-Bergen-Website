@@ -8,14 +8,13 @@ import BackToTopButton from "./BackToTopButton.js";
 
 function Footer() {
   return (
-    <div className="footer px-2 d-flex flex-column text-center  ">
-      <div className="d-flex" style={{marginTop:"-65px",}}>
-          <BackToTopButton />
-      </div>
-      <div className="container ">
-      
-        <div className="row">
-        
+    <div className="footer px-2 d-inline-flex flex-column text-center " 
+    style={{position:"relative", zIndex:"1000"}}>
+      <div className="container d-flex ">
+        <div className="col-1">
+          
+        </div>      
+        <div className="col-10">
           <div className="m-auto py-2">
             <h5>Find me</h5>
             <Link to="mailto:calebbergen000@gmail.com" className="nav-link d-inline-block">
@@ -38,7 +37,9 @@ function Footer() {
           </div>
           
         </div>
-        
+        <div className="col-1 d-flex justify-content-center align-items-center">
+          <BackToTopButton/>
+        </div>
         
       </div>
       <div className="footer-btm container mt-auto d-flex mb-2">

@@ -7,6 +7,7 @@ import Tooltip from "react-bootstrap/Tooltip";
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Badge from 'react-bootstrap/Badge';
 import Tilt from 'react-parallax-tilt';
+import ScrollToTop from "./ScrollToTop";
 
 import { AiFillGithub } from "react-icons/ai";
 import { FaExternalLinkAlt } from "react-icons/fa";
@@ -53,6 +54,7 @@ function ProjectPrev({ title, img, description, link, GithubLink, skills, flippe
   // (isVisible ? ( flipped ? "proj-left-anim" : "proj-right-anim") : "invisible" )
   const tiltImg = (
     <div className="col-sm-12 col-lg-8 mt-5" ref={animatedRef}>
+      
         <Link to="/projects" className={"reset-a col-auto cursor-change "}>
             <Tilt 
             scale={1.05}
@@ -70,6 +72,7 @@ function ProjectPrev({ title, img, description, link, GithubLink, skills, flippe
               </OverlayTrigger>
             </Tilt>
         </Link>
+
       </div>
   )
 

@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useLayoutEffect  } from 'react'
+import { Switch, Route, useLocation } from 'react-router-dom';
 import ProjectPrev from '../components/ProjectPrev';
 import { Parallax } from 'react-parallax';
 
@@ -11,6 +12,11 @@ import gid_landingpage from '../img/get-it-done-img/landingpage.png'
 import lms_Notifications from '../img/lms-img/notifcations.png'
 
 function ProjectPreviews() {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
+
   return (
     <>
       <h1>Projects </h1>
