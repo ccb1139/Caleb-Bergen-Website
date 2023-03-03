@@ -88,3 +88,145 @@
 		transform: scale(1);
 	}
 }
+
+.see-more-anim{
+	animation: seemore 2s ease 1s 1 normal forwards,  seemoreAtn 3s cubic-bezier(0.61, 1, 0.88, 1) 3005ms infinite normal forwards;
+	visibility: hidden;
+	font-size: 25px;
+
+}
+@keyframes seemore {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(250px);
+		visibility: visible;
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+		visibility: visible;
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(65px);
+		visibility: visible;
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+		visibility: visible;
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(28px);
+		visibility: visible;
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+		visibility: visible;
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(8px);
+		visibility: visible;
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+		visibility: visible;
+	}
+}
+
+@keyframes seemoreAtn {
+	
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+		visibility: visible;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+		visibility: visible;
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+		visibility: visible;
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+		visibility: visible;
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		visibility: visible;
+	}
+}
+
+.see-more-exit{
+	animation: seemoreExit 1s cubic-bezier(0.61, 1, 0.88, 1) 3ms normal forwards;
+}
+@keyframes seemoreExit {
+	0% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	5% {
+		animation-timing-function: ease-in;
+		transform: translateY(-30px);
+	}
+
+	15% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	25% {
+		animation-timing-function: ease-in;
+		transform: translateY(-38px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	52% {
+		animation-timing-function: ease-in;
+		transform: translateY(-75px);
+	}
+
+	70% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	85% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(-250px);
+		visibility: hidden;
+	}
+}

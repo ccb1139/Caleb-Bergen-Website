@@ -24,13 +24,16 @@ h1{
 }
 
 .parallax-effect {
-    
+    display: flex;
+    flex-direction: column;
     color: white;
+    justify-content: center;
+    align-items: center;
     /* border: 2px solid black; */
     /* filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.3)); */
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
-  
+    /* background-color: #000; */
     transform-style: preserve-3d;
   
     
@@ -43,8 +46,8 @@ h1{
     font-size: 35px;
     font-style: italic;
     color: white;
-    transform: translateZ(30px);
-    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.3));
+    transform: translateZ(60px);
+    /* filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.3)); */
     
   }
 
@@ -212,3 +215,14 @@ font-size: 4em;
     border: solid 1px #000000;
     border-radius: 20px;
 }
+
+.container-fluid {
+    display: flex!important;
+    flex-direction: column!important;
+    height: 100vh!important;
+  }
+  
+  .main-content {
+    flex: 1;
+    overflow-y: auto;
+  }

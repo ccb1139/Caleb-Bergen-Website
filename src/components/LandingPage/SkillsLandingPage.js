@@ -31,7 +31,7 @@ function AboutLandingPage({animate}) {
   const intersection = useIntersection(animatedRef, { threshold: 0.5 });
 
   useEffect(() => {
-    if (intersection && intersection.intersectionRatio > 0.5) {
+    if (intersection && intersection.intersectionRatio > 0.25) {
       setIsVisible(true);
       setTimeout(function() {
         setIsVisible2(true);
@@ -51,7 +51,7 @@ function AboutLandingPage({animate}) {
     <div className={'container col-10 justify-content-center ' + (isVisible ? "skills-div" : "invisible")} ref={animatedRef} style={{minWidth:"250px"}}>
     
         <div className="row align-content-center " style={{minHeight:"100vh"}}>
-            <div className='col-lg-6 col-md-12'>
+            <div className='col-md-6 col-12'>
                 {/* <AiOutlineUser size={100} /> */}
                 <Image src={CalebPic2} fluid alt="Caleb Photo" className="drop-shadow-filter" style={{borderRadius:"20px", maxWidth:"250px", marginBottom:"50px",}} />
                 
@@ -60,7 +60,7 @@ function AboutLandingPage({animate}) {
                 </p>
                 
             </div>
-            <div className={'d-flex flex-wrap col-lg-6 col-md-12 justify-content-center align-content-center ms-auto ' + (isVisible2 ? "" : "invisible")}>
+            <div className={'d-flex flex-wrap col-md-6 col-12 justify-content-center align-content-center ms-auto ' + (isVisible2 ? "" : "invisible")}>
                 <SkillCard title={"React.js"} img={reactLogo} visible={isVisible}/>
                 <SkillCard title={"Node.js"} img={NodeLogo} visible={isVisible}/>
                 <SkillCard title={"HTML"} img={HtmlLogo} visible={isVisible}/>

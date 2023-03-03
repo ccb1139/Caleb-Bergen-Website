@@ -20,9 +20,10 @@ function LandingPage() {
     <div className='text-center ' style={{ maxWidth: "100%" }}>
       <Parallax blur={10} bgImage={bgGrad} bgImageAlt="the cat" strength={100} >
         <ParticlesLandingPage main/>
-        <div className='lpd lpd-t vh-100  ' >
+        <div className='lpd lpd-t' style={{minHeight:"100vh"}}>
 
           <WhatIOffer />
+          
         </div>
         {/* <LandingPageBottom /> */}
         <div className="lpd-b row" style={{position:"relative"}}>

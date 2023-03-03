@@ -122,7 +122,7 @@ function Projects() {
                 GithubLink={"https://github.com/ccb1139/Workout-React-App"}
                 imgs = {fridgeArr}
                 Description={"Pantry Pilot is an innovative web app designed to help you keep track of your fridge's contents. With Pantry Pilot, users can easily add items to their fridge and set expiration dates to ensure they never forget about an item that's about to expire. The app will notify users when items are about to expire, so they can use them before it's too late. \n\nIn addition to its core features, Pantry Pilot has a lot of potential for expansion. Planned features include an automatic recipe recommendation system that suggests recipes based on the items in your fridge. This feature will help users make the most of the ingredients they have on hand and reduce food waste."}
-                TechUsed = {["React", "Firebase", "Bootstrap"]}
+                TechUsed = {["React", "MongoDB", "Bootstrap", "Node.js", "JavaScript", "HTML", "CSS"]}
             >
 
             </ProjectCard>
