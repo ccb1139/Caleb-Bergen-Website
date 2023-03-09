@@ -22,6 +22,7 @@ import JsLogo from '../../img/project-logos/JavaScript-Logo.png';
 import CalebPic from '../../img/calebMainPage.jpg';
 import CalebPic2 from '../../img/Caleb.jpg';
 
+
 import { AiOutlineUser } from "react-icons/ai";
 
 function AboutLandingPage({animate}) {
@@ -61,7 +62,8 @@ function AboutLandingPage({animate}) {
                 
             </div>
             <div className={'d-flex flex-wrap col-md-6 col-12 justify-content-center align-content-center ms-auto ' + (isVisible2 ? "" : "invisible")}>
-                <SkillCard title={"React.js"} img={reactLogo} visible={isVisible}/>
+                
+                <SkillCard title={"React.js"} img={reactLogo} visible={isVisible} animate/>
                 <SkillCard title={"Node.js"} img={NodeLogo} visible={isVisible}/>
                 <SkillCard title={"HTML"} img={HtmlLogo} visible={isVisible}/>
                 <SkillCard title={"CSS"} img={CssLogo} visible={isVisible}/>

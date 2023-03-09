@@ -1,10 +1,8 @@
 import React from 'react'
 import {useState, useEffect} from 'react';
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Tilt from 'react-parallax-tilt';
 import { AiOutlineSend } from "react-icons/ai";
-import FindMeCard from './FindMeCard';
 
 function ContactForm() {
   const [validated, setValidated] = useState(false);

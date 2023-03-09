@@ -1,11 +1,8 @@
 import React from 'react'
 import { Image } from 'react-bootstrap';
 import CalebImg from '../../img/Caleb.jpg';
-import { useState, useEffect } from "react";
-import Button from 'react-bootstrap/Button';
-import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
-import Badge from 'react-bootstrap/Badge';
+
 
 function AboutMe() {
   return (

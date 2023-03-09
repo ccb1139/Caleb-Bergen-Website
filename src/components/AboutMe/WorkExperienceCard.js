@@ -1,9 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from "react";
-import Button from 'react-bootstrap/Button';
-import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
-import Badge from 'react-bootstrap/Badge';
 
 function WorkExperienceCard({JobTitle, Company, StartDate, EndDate, Description, TechUsed}) {
   return (

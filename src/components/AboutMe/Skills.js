@@ -20,13 +20,6 @@ function Skills() {
   const databases = ["MongoDB", "MySQL", "PostgreSQL", "SQLite"];
   const tools = ["Git", "GitHub", "VS Code", "Visual Studio", "Jupyter Notebook", "Heroku", "Firebase", "Linux", "Windows", "MacOS"];
 
-  // {skills?.map((skill, index) => {
-  //   return (
-  //     <Badge pill bg="secondary" className="m-1">
-  //       {skill}
-  //     </Badge>
-  //   );
-  // })}
 
   return (
     <div className="container">

@@ -1,8 +1,5 @@
 import React from 'react'
 import FindMeCard from './FindMeCard';
-import ListGroup from 'react-bootstrap/ListGroup';
-import { Link } from 'react-router-dom';
-import Tilt from 'react-parallax-tilt';
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiOutlineMail } from 'react-icons/ai';
 import { AiFillGithub } from "react-icons/ai";
