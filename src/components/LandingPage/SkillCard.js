@@ -16,7 +16,7 @@ function SkillCard({title, img, visible, animate}) {
     console.log("animationEnded: " + animationEnded)
     if (touched && animationEnded) {
       console.log("touched and animation ended")
-      setFadeOutClass(true);
+      setFadeOutClass(true); 
     }
   }, [animationEnded])
 
