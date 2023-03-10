@@ -250,35 +250,54 @@
 	left: 0;
 	margin: 25px 0px 0px 25px;
 	z-index: 1001;
-	animation: moveMouse 4s ease 0s infinite normal forwards;
-	animation-fill-mode: forwards;
+	animation: moveMouse 3s ease 0s infinite normal forwards;
+	/* animation-fill-mode: forwards; */
 }
 
 @keyframes moveMouseFadeIn {
 	0% {
 		opacity: 0;
-		transform: scale(0.6) translate(15px, 15px);
+		transform: scale(0.6) translate(35px, 35px);
 	}
 
 	100% {
 		opacity: 1;
-		transform: scale(1) translate(85px, 85px);
+		transform: scale(1) translate(65px, 65px);
 	}
 }
-
 @keyframes moveMouse {
+	0% {
+		transform: translate(35px, 35px);
+	}
+
+	50% {
+		transform: translate(65px, 65px);
+	}
+
+	100% {
+		transform: translate(35px, 35px);
+	}
+}
+/* @keyframes moveMouseDown {
 	0% {
 		transform: translate(15px, 15px);
 	}
 
-	50% {
+	100% {
+		transform: translate(85px, 85px);
+	}
+
+}
+@keyframes moveMouseUp {
+	0% {
 		transform: translate(85px, 85px);
 	}
 
 	100% {
 		transform: translate(15px, 15px);
 	}
-}
+
+} */
 
 .arrow-cursor-anim-out {
 	animation: moveMouseFadeOut 3s ease 0s normal forwards;
@@ -287,7 +306,7 @@
 @keyframes moveMouseFadeOut {
 	0% {
 		opacity: 1;
-		transform: scale(1) translate(15px, 15px);
+		transform: scale(1) translate(35px, 35px);
 	}
 
 	100% {

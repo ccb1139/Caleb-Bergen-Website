@@ -12,17 +12,12 @@ function SkillCard({title, img, visible, animate}) {
   const [fadeOutClass, setFadeOutClass] = useState(false);
 
   useEffect(() => {
-    console.log("touched: " + touched)
-    console.log("animationEnded: " + animationEnded)
-    if (touched && animationEnded) {
-      console.log("touched and animation ended")
+    if (animationEnded) {
       setFadeOutClass(true); 
     }
   }, [animationEnded])
 
-  useEffect(() => {
-    console.log(animationEnded)
-  }, [animationEnded])
+
 
   function handleAnimationEnd() {
     setAnimationEnded(true);
@@ -30,7 +25,7 @@ function SkillCard({title, img, visible, animate}) {
 
   function handleAnimationIteration(event) {
     console.log(event.animationName)
-    if (event.animationName === "moveMouse") {
+    if ((event.animationName === "moveMouse" && touched)) {
       setAnimationEnded(true);
     } else {
       setAnimationEnded(false);
